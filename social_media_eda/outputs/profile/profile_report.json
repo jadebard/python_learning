@@ -1,0 +1,91 @@
+{
+  "rows": 6000,
+  "columns": 9,
+  "column_names": [
+    "age",
+    "daily_screen_time",
+    "social_media_hours",
+    "study_hours",
+    "sleep_hours",
+    "notifications_per_day",
+    "focus_score",
+    "addiction_level",
+    "productivity_score"
+  ],
+  "dtypes": {
+    "age": "float64",
+    "daily_screen_time": "float64",
+    "social_media_hours": "float64",
+    "study_hours": "float64",
+    "sleep_hours": "float64",
+    "notifications_per_day": "float64",
+    "focus_score": "float64",
+    "addiction_level": "str",
+    "productivity_score": "float64"
+  },
+  "missing_counts": {
+    "age": 120,
+    "daily_screen_time": 120,
+    "social_media_hours": 120,
+    "study_hours": 120,
+    "sleep_hours": 120,
+    "notifications_per_day": 120,
+    "focus_score": 120,
+    "addiction_level": 120,
+    "productivity_score": 120
+  },
+  "missing_percent": {
+    "age": 2.0,
+    "daily_screen_time": 2.0,
+    "social_media_hours": 2.0,
+    "study_hours": 2.0,
+    "sleep_hours": 2.0,
+    "notifications_per_day": 2.0,
+    "focus_score": 2.0,
+    "addiction_level": 2.0,
+    "productivity_score": 2.0
+  },
+  "duplicate_rows": 0,
+  "numeric_ranges": {
+    "age": {
+      "min": 15.0,
+      "max": 39.0,
+      "mean": 27.11139455782313
+    },
+    "daily_screen_time": {
+      "min": 2.0,
+      "max": 11.99,
+      "mean": 6.923175170068028
+    },
+    "social_media_hours": {
+      "min": 0.66,
+      "max": 10.66,
+      "mean": 4.145914965986394
+    },
+    "study_hours": {
+      "min": 0.0,
+      "max": 8.0,
+      "mean": 4.069328231292517
+    },
+    "sleep_hours": {
+      "min": 4.0,
+      "max": 9.0,
+      "mean": 6.514270408163266
+    },
+    "notifications_per_day": {
+      "min": 20.0,
+      "max": 299.0,
+      "mean": 159.781462585034
+    },
+    "focus_score": {
+      "min": 47.39,
+      "max": 100.0,
+      "mean": 96.36353061224489
+    },
+    "productivity_score": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 37.61405102040816
+    }
+  }
+}

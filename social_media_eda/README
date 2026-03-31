@@ -1,0 +1,98 @@
+Project Goal
+
+Build a class-based social media EDA and prediction pipeline that:
+1. Loads the dataset once in a pristine state.
+2. Produces at least 3 meaningful data stories (visual + insight-driven analysis).
+3. Trains and compares 2 machine learning models to predict productivity_score.
+
+Dataset
+
+Input file:
+- social_media_productivity_6000.csv
+
+Expected columns:
+- age
+- daily_screen_time
+- social_media_hours
+- study_hours
+- sleep_hours
+- notifications_per_day
+- focus_score
+- addiction_level
+- productivity_score
+
+Current Starter Structure
+
+- data_loader.py
+	- DataLoader class
+	- Loads CSV into pristine pandas and numpy copies
+	- Validates required schema
+
+- profiler.py
+	- DataProfiler class
+	- Generates data quality profile (missingness, dtypes, ranges, duplicates)
+
+- story_relationships.py
+	- StoryRelationships class
+	- Correlation heatmap and trend view for productivity relationships
+
+- story_group_analysis.py
+	- StoryGroupAnalysis class
+	- Group-level productivity and focus comparisons by addiction_level
+
+- story_behavior_balance.py
+	- StoryBehaviorBalance class
+	- Compares high-screen vs low-screen behavior and productivity
+
+- model_trainer.py
+	- ProductivityModelTrainer class
+	- Trains and compares Ridge vs RandomForestRegressor
+	- Reports RMSE, MAE, R2, and CV RMSE
+
+- main.py
+	- End-to-end orchestration script
+	- Runs profiling, stories, and model comparison
+
+- requirements.txt
+	- Python dependencies for this project
+
+How To Run
+
+1. Install dependencies:
+	 pip install -r requirements.txt
+
+2. Run the full workflow:
+	 python main.py
+
+Outputs
+
+The pipeline writes outputs to:
+- outputs/profile/profile_report.json
+- outputs/stories/*.png
+- outputs/stories/*.csv
+- outputs/models/model_comparison.csv
+- outputs/run_summary.json
+
+Minimum Acceptance Criteria
+
+1. Data loading and schema validation complete with no missing required columns.
+2. Three story modules execute and save visuals.
+3. Model comparison CSV is generated with at least two models.
+4. Final run summary JSON is generated.
+
+Suggested Next Objectives
+
+1. Add explicit data cleaning policy:
+	 - Define when to impute vs drop rows.
+
+2. Add reproducibility policy:
+	 - Keep random seed fixed and log run metadata.
+
+3. Add evaluation depth:
+	 - Add residual analysis and error by addiction_level.
+
+4. Add tests:
+	 - Unit tests for schema validation and preprocessing behavior.
+
+5. Add one advanced model:
+	 - Example: HistGradientBoostingRegressor or XGBoost (optional).

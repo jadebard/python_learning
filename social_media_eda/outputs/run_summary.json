@@ -1,0 +1,71 @@
+{
+  "profile_rows": 6000,
+  "profile_columns": 9,
+  "story_outputs": {
+    "relationships": {
+      "story": "relationships",
+      "heatmap_path": "D:\\WorkDir\\Github_workspace\\python_learning\\social_media_eda\\outputs\\stories\\story1_correlation_heatmap.png",
+      "scatter_path": "D:\\WorkDir\\Github_workspace\\python_learning\\social_media_eda\\outputs\\stories\\story1_study_vs_productivity.png",
+      "top_productivity_correlations": {
+        "study_hours": 0.7389548822897494,
+        "focus_score": 0.5721901806982287,
+        "sleep_hours": 0.22092166792710882
+      }
+    },
+    "group_analysis": {
+      "story": "group_analysis",
+      "boxplot_path": "D:\\WorkDir\\Github_workspace\\python_learning\\social_media_eda\\outputs\\stories\\story2_productivity_by_addiction_level.png",
+      "group_mean_table_path": "D:\\WorkDir\\Github_workspace\\python_learning\\social_media_eda\\outputs\\stories\\story2_group_means.csv",
+      "group_means": {
+        "productivity_score": {
+          "Low": 56.93,
+          "Medium": 42.16,
+          "Unknown": 34.22,
+          "High": 20.32
+        },
+        "focus_score": {
+          "Low": 99.79,
+          "Medium": 98.68,
+          "Unknown": 96.27,
+          "High": 90.78
+        }
+      }
+    },
+    "behavior_balance": {
+      "story": "behavior_balance",
+      "median_screen_time": 6.86,
+      "summary_path": "D:\\WorkDir\\Github_workspace\\python_learning\\social_media_eda\\outputs\\stories\\story3_screen_group_summary.csv",
+      "plot_path": "D:\\WorkDir\\Github_workspace\\python_learning\\social_media_eda\\outputs\\stories\\story3_screen_group_productivity.png",
+      "summary": {
+        "study_hours": {
+          "HighScreen": 4.06,
+          "LowScreen": 4.08
+        },
+        "sleep_hours": {
+          "HighScreen": 6.51,
+          "LowScreen": 6.52
+        },
+        "productivity_score": {
+          "HighScreen": 27.64,
+          "LowScreen": 47.28
+        }
+      }
+    }
+  },
+  "model_results": [
+    {
+      "model": "random_forest",
+      "test_rmse": 10.2874,
+      "test_mae": 7.8282,
+      "test_r2": 0.8616,
+      "cv_rmse_mean": 10.3095
+    },
+    {
+      "model": "ridge",
+      "test_rmse": 10.5101,
+      "test_mae": 8.2553,
+      "test_r2": 0.8555,
+      "cv_rmse_mean": 10.5237
+    }
+  ]
+}
